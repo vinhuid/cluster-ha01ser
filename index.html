@@ -1,44 +1,32 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Markmap</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
-#mindmap {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-</style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
+<meta charset="utf-8"/>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="stylesheet" href="base.min.css"/>
+<link rel="stylesheet" href="fancy.min.css"/>
+<link rel="stylesheet" href="main.css"/>
+<script src="compatibility.min.js"></script>
+<script src="theViewer.min.js"></script>
+<script>
+try{
+theViewer.defaultViewer = new theViewer.Viewer({});
+}catch(e){}
+</script>
+<title></title>
 </head>
 <body>
-<svg id="mindmap"></svg>
-<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
-                setTimeout(r);
-              })(() => {
-  const {
-    markmap,
-    mm
-  } = window;
-  const {
-    el
-  } = markmap.Toolbar.create(mm);
-  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
-  document.body.append(el);
-})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
-              const markmap = getMarkmap();
-              window.mm = markmap.Markmap.create(
-                "svg#mindmap",
-                (getOptions || markmap.deriveOptions)(jsonOptions),
-                root2
-              );
-            })(() => window.markmap,null,{"content":"☁️ ISP + FPT","children":[{"content":"🧬 Gateway 1","children":[{"content":"♻️ Switch","children":[{"content":"🔥 SoftwareFW/WAF","children":[{"content":"🌐 IIS/WEB","children":[],"payload":{"lines":"5,6"}}],"payload":{"lines":"4,6"}}],"payload":{"lines":"3,6"}}],"payload":{"lines":"2,3"}},{"content":"🧬 Gateway 2","children":[{"content":"♻️ Switch","children":[{"content":"🔥 SoftwareFW/WAF","children":[{"content":"💠 SQL/DB","children":[],"payload":{"lines":"9,11"}}],"payload":{"lines":"8,11"}}],"payload":{"lines":"7,11"}}],"payload":{"lines":"6,7"}}],"payload":{"lines":"1,2"}},{"color":["#2980b9"]})</script>
+<div id="sidebar">
+<div id="outline">
+</div>
+</div>
+<div id="page-container">
+<div id="pf1" class="pf w0 h0" data-page-no="1"><div class="pc pc1 w0 h0"><img class="bi x0 y0 w1 h1" alt="" src="bg1.png"/><div class="t m0 x1 h2 y1 ff1 fs0 fc0 sc0 ls0 ws0">ISP<span class="_ _0"></span> + FPT</div><div class="t m0 x2 h2 y2 ff1 fs0 fc0 sc0 ls0 ws0">Gateway 1 </div><div class="t m0 x3 h2 y3 ff1 fs0 fc1 sc0 ls0 ws0">Switch<span class="_ _1"> </span>SF/W<span class="_ _2"></span>AF</div><div class="t m0 x4 h2 y4 ff1 fs0 fc2 sc0 ls0 ws0">W<span class="_ _2"></span>AF (W<span class="_ _3"></span>eb <span class="_ _4"></span>Application Firewall)</div><div class="t m0 x4 h2 y5 ff1 fs0 fc2 sc0 ls0 ws0">Software Firewall</div><div class="t m0 x5 h2 y6 ff1 fs0 fc0 sc0 ls0 ws0">Gateway 2 </div><div class="t m0 x6 h2 y7 ff1 fs0 fc1 sc0 ls0 ws0">Switch<span class="_ _1"> </span>SF/W<span class="_ _2"></span>AF</div><div class="t m0 x7 h2 y8 ff1 fs0 fc2 sc0 ls0 ws0">W<span class="_ _2"></span>AF (W<span class="_ _3"></span>eb <span class="_ _4"></span>Application Firewall)</div><div class="t m0 x7 h2 y9 ff1 fs0 fc2 sc0 ls0 ws0">Software Firewall</div><div class="t m0 x8 h2 ya ff1 fs0 fc0 sc0 ls0 ws0">IIS/WEB</div><div class="t m0 x9 h2 yb ff1 fs0 fc0 sc0 ls0 ws0">SQL/DB</div></div><div class="pi" data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'></div></div>
+</div>
+<div class="loading-indicator">
+
+</div>
 </body>
 </html>
